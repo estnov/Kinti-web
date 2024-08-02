@@ -1,0 +1,35 @@
+<div class="body">
+    <img src="https://kinti-store.com/assets/logos/Logo.jpeg" class="logo">
+    <div class="login">
+        <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Ingresa tu usuario">
+                <nz-input-group nzPrefixIcon="user">
+                  <input type="text" nz-input formControlName="userName" placeholder="Usuario" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+              <nz-form-control nzErrorTip="Ingresa tu contraseña">
+                <nz-input-group nzPrefixIcon="lock">
+                  <input type="password" nz-input formControlName="password" placeholder="Contraseña" />
+                </nz-input-group>
+              </nz-form-control>
+            </nz-form-item>
+            <div nz-row class="login-form-margin">
+              <div nz-col [nzSpan]="12">
+                <label nz-checkbox formControlName="remember">
+                  <span>Recordarme</span>
+                </label>
+              </div>
+              <div nz-col [nzSpan]="12">
+                <a class="login-form-forgot" routerLink="reset-password">Olvidé la contraseña</a>
+              </div>
+            </div>
+            <br>
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Iniciar sesión</button>
+            O
+            <a routerLink="register"> Registrarme</a>
+          </form>
+    </div>
+  </div>
