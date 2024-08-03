@@ -1,66 +1,17 @@
 .body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh; 
-    padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100vh;
+  padding: 25px;
 }
 
 .logo {
-    width: 25%;
-    min-width: 200px;
+  width: 20%;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.login {
-    width: 80%;
-    max-width: 300px;
-    min-width: 200px;
-    padding: 20px;
-    border: 2px solid #5CC8F2;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    text-align: center; 
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.login .element{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.login .element h2 {
-    font-weight: 24px;
-    
-}
-
-.login .element h2 {
-    font-size: 24px; /* Tamaño de letra */
-    color: #F25E95; /* Color de letra */
-    font-weight: 500; /* Peso de letra intermedio */
-}
-
-
-.login .element h3 {
-    font-size: 20px; /* Tamaño de letra */
-    color: #27A4F2; /* Color de letra */
-    font-weight: bold; /* Peso de letra intermedio */
-}
-
-a{
-    color: #27A4F2;
-}
-
-a :hover{
-    color: #F25E95;
-}

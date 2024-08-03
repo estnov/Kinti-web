@@ -19,6 +19,13 @@ import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { ListadoProductosComponent } from './pages/listado-productos/listado-productos.component';
+import { HeaderComponent } from './pages/header/header.component';
+import { FooterComponent } from './pages/footer/footer.component';
+import { ProductoComponent } from './pages/producto/producto.component';
+import { AgregarProductoComponent } from './pages/agregar-producto/agregar-producto.component';
+import { BilleteraComponent } from './pages/billetera/billetera.component';
 
 registerLocaleData(es);
 
@@ -26,7 +33,13 @@ registerLocaleData(es);
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ListadoProductosComponent,
+    HeaderComponent,
+    FooterComponent,
+    ProductoComponent,
+    AgregarProductoComponent,
+    BilleteraComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +52,8 @@ registerLocaleData(es);
     NzGridModule,
     NzIconModule,
     NzFormModule,
-    BrowserAnimationsModule, 
+    NzCardModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     NzMessageModule
   ],

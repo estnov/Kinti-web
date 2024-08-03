@@ -1,0 +1,46 @@
+<app-header/>
+<div class="body">
+  <div class="imagen">
+    <div nz-col [nzSpan]="12">
+      <a class="produch-form-forgot" routerLink="reset-password">Cargar imagen</a>
+    </div>
+  </div>
+  <div class="product">
+    <form nz-form [formGroup]="validateForm" class="product-form" (ngSubmit)="submitForm()">
+      <nz-form-item>
+        <nz-form-label nzFor="name">Nombre del producto</nz-form-label>
+        <nz-form-control nzErrorTip="Este campo es obligatorio">
+          <nz-input-group>
+            <input name="name" type="text" nz-input formControlName="productName" placeholder="Nombre de tu Producto" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label nzFor="description">Nombre del producto</nz-form-label>
+        <nz-form-control nzErrorTip="Este campo es obligatorio">
+          <nz-input-group>
+            <input name="description" type="text" nz-input formControlName="productDescription" placeholder="Descripción de tu Producto" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <nz-form-item>
+        <nz-form-label nzFor="price">Nombre del producto</nz-form-label>
+        <nz-form-control nzErrorTip="Este campo es obligatorio">
+          <nz-input-group>
+            <input name="price" type="number" nz-input formControlName="productPrice" placeholder="Precio de tu Producto" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+      <div nz-row class="product-form-margin">
+        <div nz-col [nzSpan]="12">
+          <label nz-checkbox [(ngModel)]="checked" formControlName="productBidding">
+            <span>Permitir Ofertas</span>
+          </label>
+        </div>
+      </div>
+      <br>
+      <button nz-button class="product-form-button product-form-margin" [nzType]="'primary'">Cargar Producto</button>
+    </form>
+  </div>
+</div>
+<app-footer/>

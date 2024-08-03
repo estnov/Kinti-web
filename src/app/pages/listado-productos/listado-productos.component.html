@@ -1,0 +1,37 @@
+<app-header/>
+<div class="body">
+  <div class="busqueda">
+    <span class="lupa" nz-icon nzType="search"></span>
+    <nz-input-group nzSearch>
+      <input class="buscar" type="text" nz-input formControlName="inputBusqueda" placeholder="Buscar Productos ..." >
+    </nz-input-group>
+  </div>
+  <div class="productos">
+    <div class="producto">
+      <nz-card nzHoverable>
+        <nz-card-meta
+          nzTitle="Ejeas Q8"
+          nzDescription="Intercambiador de motocicleta"
+          [nzAvatar]="avatarTemplate"
+        >
+        </nz-card-meta>
+        <p class="precio">Precio: $89.00</p>
+      </nz-card>
+    </div>
+    <div class="producto">
+      <nz-card nzHoverable>
+        <nz-card-meta
+          nzTitle="Jeans del Trabajo"
+          nzDescription="Jeans del Trabajo"
+          [nzAvatar]="avatarTemplate"
+        >
+        </nz-card-meta>
+        <p class="precio">Precio: $35.00</p>
+      </nz-card>
+    </div>
+    <ng-template #avatarTemplate>
+      <span nz-icon class="imagen" nzType="picture" nzTheme="outline"></span>
+    </ng-template>
+  </div>
+</div>
+<app-footer/>
